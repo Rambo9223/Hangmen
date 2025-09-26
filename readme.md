@@ -7,7 +7,7 @@
 <br />
 <div align="center">
   <a href="">
-    <img src="/client/src/Assets/Images/home.png" alt="Logo" width="360" height="202.5">
+    <img src="/client/src/Assets/Images/home.png" alt="Logo" width="1846" height="847">
   </a>
 
 <h3 align="center">Hangmen</h3>
@@ -61,7 +61,7 @@ Hangmen creates a new concept where the user attempts to save mutliple stick fig
 The stick figures images have been updated by Jenny Rose:
 LinkedIn: [https://www.linkedin.com](https://uk.linkedin.com/in/jennifer--rose) 
 GitHub: [https://github.com/github_username](https://github.com/rosejar)
-(github/linked Jenny Rose) and original music & SFX have been added to the game for added atmosphere.
+Original music & SFX have been added to the game for added atmosphere.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -148,9 +148,9 @@ The second round will ask the player to make a word only using the letters from 
 
 The third round will ask the player to create a word starting with the last letter of the original word in round 1 and be at least no shorter in length to the original word by two characters. The player will have 3 guesses to complete this.
 
-The fourth round requires the player to guess a synonym of the original word, the player has 5 guesses to complete this. 
+The fourth round requires the player to guess a synonym of the original word, the player has 3 guesses to complete this. 
 
-The fifth and final round requires the player to guess an antonym of the original word, again the player has 5 guesses to complete this. 
+The fifth and final round requires the player to guess an antonym of the original word, again the player has 3 guesses to complete this. 
 
 At any point after round one the user can decide to quit the game by clicking the give up button however this counts as a loss. 
 
@@ -184,7 +184,8 @@ To run the tests on the app simply open the terminal, cd to the server directory
     ```
 
 ![NPM Test](/client/src/Assets/Images/test.png)
-. Provided the project has been installed correctly the server test suite will run, and then the client 
+
+Provided the project has been installed correctly the server test suite will run, and then the client 
 test will run. It should appear as follows:
 
 ![Tests](/client/src/Assets/Images/results.png)
