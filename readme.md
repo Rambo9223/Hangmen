@@ -59,8 +59,11 @@ In classic Hangman the player must guess letters to ultimatley reveal a word, gu
 Hangmen creates a new concept where the user attempts to save mutliple stick figure men over 5 rounds with subsequent rule changes over each round.
 
 The stick figures images have been updated by Jenny Rose:
+
 LinkedIn: [https://www.linkedin.com](https://uk.linkedin.com/in/jennifer--rose) 
+
 GitHub: [https://github.com/github_username](https://github.com/rosejar)
+
 Original music & SFX have been added to the game for added atmosphere.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
