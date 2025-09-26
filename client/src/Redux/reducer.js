@@ -16,6 +16,8 @@ const newHangmanReducer = createSlice({
     },
     // remove old game will take any old/unused games out of the state array
     removeOldGame: (state, action) => {
+      console.log(state);
+      console.log(action.payload);
       return state.filter((item) => item.id !== action.payload);
     },
   },

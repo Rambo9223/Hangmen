@@ -1,5 +1,4 @@
-import * as Icon from "react-bootstrap-icons";
-import React from "react";
+import { QuestionLg } from "react-bootstrap-icons";
 
 /* This function is used to display the state word,
 we pass props to the function, the word, the letter the user guessed and the 
@@ -12,7 +11,7 @@ function WordDisplay(props) {
   let word = props.word; // word
   let letter = props.letter; // user guess
   let guessList = props.guessList; // list of all guesses
-  console.log(word);
+  
   function MappedWord() {
     if (word) {
       let gameWord = String(word); // word converted to string
@@ -26,7 +25,7 @@ function WordDisplay(props) {
 
         keys.push(item); // push item to the keys array
 
-        let hiddenItem = <Icon.QuestionSquare size={"36px"} />; // our icon displayed hiding letters
+        let hiddenItem = <QuestionLg size={"36px"} />; // our icon displayed hiding letters
 
         if (item === letter) {
           // if item = current user guess
@@ -65,5 +64,3 @@ function WordDisplay(props) {
 }
 
 export default WordDisplay;
-
-//export default GuessHandler

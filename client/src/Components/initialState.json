@@ -1,0 +1,36 @@
+{"round1":{
+  "guess": "", 
+  "letter": "", 
+  "showList": 0, 
+  "guessList": [],
+  "guessLeft": 10
+},
+"round2":{
+  "guess": "",
+  "letter": "",
+  "showList": 0,
+  "guessList": [],
+  "guessLeft": 3
+},
+"round3":{
+  "guess": "",
+  "letter": "",
+  "showList": 0,
+  "guessList": [],
+  "guessLeft": 3
+},
+"round4":{
+  "guess": "",
+  "letter": "",
+  "showList": 0,
+  "guessList": [],
+  "guessLeft": 5
+},
+"round5":{
+  "guess": "",
+  "letter": "",
+  "showList": 0,
+  "guessList": [],
+  "guessLeft": 5
+}
+}

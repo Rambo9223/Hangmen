@@ -1,6 +1,6 @@
-/*This function creates an array of 100 random numbers that we can pass to our dictionary filer */
+/*This function creates an array of random numbers that we can pass to our dictionary filer */
 
-function GetWordIndexes() {
+function GetWordIndexes(max) {//
 
   function getRandomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -8,12 +8,10 @@ function GetWordIndexes() {
 
 let indexes = []
 const min = 0;
-const max = 370102;
-const randomNumber = getRandomNumber(min, max);
+;
 
-console.log(`Random number between ${min} and ${max}: ${randomNumber}`);
 
-for (let i = 0; indexes.length < 100; i++) {
+for (let i = 0; indexes.length < 5; i++) {
     const randomNumber = getRandomNumber(min, max);
     if (!indexes.includes(randomNumber)) {
         indexes.push(randomNumber);

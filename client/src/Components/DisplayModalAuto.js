@@ -1,9 +1,12 @@
-import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
+// a simple function to display a modal component
+// this modal will open on an automatic event
 function DisplayModalAuto(props) {
 
+
+  // the title,body,text and handle close function are supplied as props
   let body = props.body;
   let title = props.title;
   let show = props.show;
@@ -17,9 +20,10 @@ function DisplayModalAuto(props) {
         onHide={handleClose}
         backdrop="static"
         keyboard={false}
+        
       >
         <Modal.Header closeButton>
-          <Modal.Title>{title}</Modal.Title>
+          <Modal.Title >{title}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           {body}
