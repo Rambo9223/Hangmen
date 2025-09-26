@@ -95,6 +95,8 @@ The final dictionary JSON file for use on the client side of the application was
 
 ## Deployed Version 
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7ca61855-1f05-448c-a0fd-7a99f03ceec5/deploy-status)](https://app.netlify.com/projects/hangmenr9223/deploys)
+
 If you would like to view the deployment of the game you can find it here - <a href="https://hangmenr9223.netlify.app/">Deployed Version</a>
 
 
