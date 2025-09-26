@@ -95,7 +95,7 @@ The final dictionary JSON file for use on the client side of the application was
 
 ## Deployed Version 
 
-If you would like to view the deployment of the game you can find it here - <a href="link to deployment">Deployed Version</a>
+If you would like to view the deployment of the game you can find it here - <a href="https://hangmenr9223.netlify.app/">Deployed Version</a>
 
 
 <!-- GETTING STARTED -->
@@ -151,9 +151,9 @@ The second round will ask the player to make a word only using the letters from 
 
 The third round will ask the player to create a word starting with the last letter of the original word in round 1 and be at least no shorter in length to the original word by two characters. The player will have 3 guesses to complete this.
 
-The fourth round requires the player to guess a synonym of the original word, the player has 3 guesses to complete this. 
+The fourth round requires the player to guess a synonym of the original word, the player has 5 guesses to complete this. 
 
-The fifth and final round requires the player to guess an antonym of the original word, again the player has 3 guesses to complete this. 
+The fifth and final round requires the player to guess an antonym of the original word, again the player has 5 guesses to complete this. 
 
 At any point after round one the user can decide to quit the game by clicking the give up button however this counts as a loss. 
 
