@@ -64,8 +64,8 @@ export default function Help(props) {
     1 - You must now make a synonym of the original word. <br />
     2 - You can use any letters in any order to make the new word. <br />
     3 - Type your word in the input and click Guess. <br />
-    4 - If you input a correct word you win the round and progress to round 4. <br />
-    5 - You can have a maximum of 3 incorrect words. <br />
+    4 - If you input a correct word you win the round and progress to round 5. <br />
+    5 - You can have a maximum of 5 incorrect words. <br />
     6 - If you fail to guess a word you lose the round and the Hangman
     </>,
     <>
@@ -77,7 +77,7 @@ export default function Help(props) {
     2 - You can use any letters in any order to make the new word. <br />
     3 - Type your word in the input and click Guess. <br />
     4 - If you input a correct word you win the round and the game. <br />
-    5 - You can have a maximum of 3 incorrect words. <br />
+    5 - You can have a maximum of 5 incorrect words. <br />
     6 - If you fail to guess a word you lose the round and the Hangman
     </>];
 
