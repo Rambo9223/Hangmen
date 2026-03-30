@@ -25,7 +25,7 @@ function WordDisplay(props) {
 
         keys.push(item); // push item to the keys array
 
-        let hiddenItem = <QuestionLg size={"36px"} />; // our icon displayed hiding letters
+        let hiddenItem = <QuestionLg className="QuestionLG"/>; // our icon displayed hiding letters
 
         if (item === letter) {
           // if item = current user guess

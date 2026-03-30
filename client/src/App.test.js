@@ -37,7 +37,7 @@ describe('App Tests', () => {
     expect(images[0]).toBeInTheDocument();
     expect(images[1]).toBeInTheDocument();
     expect(textInput[0]).toBeInTheDocument();
-    expect(submitButton[3]).toBeInTheDocument();
+    expect(submitButton[2]).toBeInTheDocument();
   });
 
   test('Make correct or incorrect guess', async () => {

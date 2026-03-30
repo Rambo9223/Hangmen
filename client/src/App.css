@@ -41,11 +41,13 @@ max-height:inherit;
 }
 .heading{
   text-align: center;
-  top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  gap: 40px;
 }
-.heading > h1{
-  font-size: 180%;
-}
+
 
 .shadow{
   background-color: rgba(0, 0, 0, 0.493);
@@ -55,18 +57,14 @@ max-height:inherit;
 
 .hidden-word{
   display: flex;
+  /*flex-wrap: wrap;*/
   flex-direction: row;
   align-items: center;
   justify-content:center;
   list-style: none;
-  overflow-wrap:break-word;
   padding-top: 1%;
 }
-@media only screen and (max-width:768px) {
-  .hidden-word{
-    inline-size: 100px;
-  }
-}
+
 @media only screen and (min-width:769px) {
   .hidden-word{
     inline-size:auto;
@@ -80,6 +78,10 @@ max-height:inherit;
   background-color: rgba(0, 0, 0, 0.806);
   border-radius: 15%;
 }
+
+.QuestionLG{
+    font-size: 30px;
+  }
 
 .guess-container{
   color: black;
@@ -124,17 +126,16 @@ max-height:inherit;
   display:flex;
   flex-direction:row;
   flex-wrap: wrap;
-align-items: baseline;
+  align-items: baseline;
 }
 .word-ul{
   display: flex;
   flex-direction:row;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content:center;
 }
 .incorrect-word{
   list-style: none;
-
-
 }
 .incorrect-word:last-child:after{
 content: ",";
@@ -167,18 +168,20 @@ font-size: 170%;
   padding: 2%;
   font-size: larger;
   font-weight: bolder;
-  color: rgb(134, 0, 0);
+  color: rgb(222, 55, 55);
 }
 
-#game-won{
- max-height: 300px;
- max-width: 600px;
-}
+    .game-won{
+    /*height={"220px"} width={"440px"}*/
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+    }
 
-#game-won > img {
-  max-width: 100%;
-  height: auto;
-}
+    #game-lost{
+    max-width: 100%;
+    height: auto;
+    }
 
 .creator-links {
   list-style: none;

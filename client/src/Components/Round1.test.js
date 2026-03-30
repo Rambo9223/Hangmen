@@ -35,11 +35,9 @@ function MockRound1(props){
             let lists = await screen.findAllByRole("list");
             let image = await screen.findByRole("img");
             let form = await screen.findByRole("form");
-            let restart = await screen.findByText("Restart Game",{exact:false});
             expect(lists.length).toEqual(3);
             expect(image).toBeInTheDocument();
             expect(form).toBeInTheDocument();
-            expect(restart).toBeInTheDocument();
         });
 
         test('Errors Show - Blank guess',async() => {

@@ -26,7 +26,7 @@ describe('DisplayModal Tests', () => {
         // assert elements exist
         let modalBody = await page.findByText(modalProps.body);
         let modalTitle = await page.findByText(modalProps.title);
-        let closeButton = await page.findByText("Close",{exact:false});
+        let closeButton = await page.findByText("Quit Game",{exact:false});
         
         expect(modalBody).toBeInTheDocument();
         expect(modalTitle).toBeInTheDocument();

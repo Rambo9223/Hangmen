@@ -11,7 +11,7 @@ export default function Help(props) {
         <h6>Rules: </h6>
         1 - guess one letter at a time.
         <br />
-        2 - Type in your guesses to the guess input and click Guess.
+        2 - Type in your guesses to the guess input and enter/click Guess.
         <br />
         3 - If your guess is correct a letter will appear on the screen & in
         correct letters. <br />
@@ -33,9 +33,9 @@ export default function Help(props) {
     only using the letters from the previous word. <br />
     2 - You can use any number of letters from the previous word. <br />
     3 - You can use the letters in any order and multiple times. <br />
-    4 - Type your word in the input and click Guess. <br />
+    4 - Type your word in the input and enter/click Guess. <br />
     5 - If you input a correct word you win the round and progress to round 3. <br />
-    6 - You can have a maximum of 5 incorrect words. <br />
+    6 - You can have a maximum of 3 incorrect words. <br />
     6 - If you fail to guess a word you lose the round and the Hangman
 
 
@@ -49,7 +49,7 @@ export default function Help(props) {
     1 - Starting with the end letter of the previous word, you must make a new word. <br />
     2 - The new word must be no less than 2 characters less than the previous word. <br />
     3 - You can use any letters in any order to make the new word. <br />
-    4 - Type your word in the input and click Guess. <br />
+    4 - Type your word in the input and enter/click Guess. <br />
     5 - If you input a correct word you win the round and progress to round 3. <br />
     6 - You can have a maximum of 3 incorrect words. <br />
     7 - If you fail to guess a word you lose the round and the Hangman
@@ -63,7 +63,7 @@ export default function Help(props) {
     <h6>Rules:</h6>
     1 - You must now make a synonym of the original word. <br />
     2 - You can use any letters in any order to make the new word. <br />
-    3 - Type your word in the input and click Guess. <br />
+    3 - Type your word in the input and enter/click Guess. <br />
     4 - If you input a correct word you win the round and progress to round 5. <br />
     5 - You can have a maximum of 5 incorrect words. <br />
     6 - If you fail to guess a word you lose the round and the Hangman
@@ -75,7 +75,7 @@ export default function Help(props) {
     <h6>Rules:</h6>
     1 - You must now make an antonym of the original word. <br />
     2 - You can use any letters in any order to make the new word. <br />
-    3 - Type your word in the input and click Guess. <br />
+    3 - Type your word in the input and enter/click Guess. <br />
     4 - If you input a correct word you win the round and the game. <br />
     5 - You can have a maximum of 5 incorrect words. <br />
     6 - If you fail to guess a word you lose the round and the Hangman

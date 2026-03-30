@@ -4,9 +4,7 @@ import WordDisplay from "./WordDisplay";
 import HangmanImage from "./HangmanImage";
 import Game from "./Game";
 import MapGuesses from "./MapGuesses";
-import ToggleRestart from "./ToggleRestart";
 import HandleGame from "./HandleGame";
-import initalState from "./initialState.json";
 import InputForm from "./InputForm";
 //import testword from "./testword.json"
 import { useState } from "react";
@@ -45,7 +43,7 @@ if (props.game !== undefined || props.testing !== undefined) {
     
     // this function handles the letter the user inputs to the text input below
     function handleChange(event) {
-    let input = event.target.value;
+    let input = String(event.target.value).toLocaleLowerCase();
       // we update the object with guess = input & showList = 1
     HandleGame(input,playing.letter,1,playing.guessList,playing.guessLeft,setPlaying
     );
@@ -142,12 +140,11 @@ if (props.game !== undefined || props.testing !== undefined) {
         mute={mute}
         />
         <HangmanImage num={playing.guessLeft} />
-        {playing.showList === 1 ? <MapGuesses word={word} guessArray={playing.guessList} /> : null}
+        
         <div className="shadow">You have {playing.guessLeft} guesses left!</div>
         <InputForm gameOver={gameOver} handleChange={handleChange} userGuess={userGuess} guessLength={"1"} guess={playing.guess} />
-        <ToggleRestart setPlaying={setPlaying} initalState={initalState.round1} setGameOver={setGameOver}/>
+        {playing.showList === 1 ? <MapGuesses word={word} guessArray={playing.guessList} /> : null}
 
-        
     </>
     );
 }

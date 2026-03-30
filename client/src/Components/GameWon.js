@@ -15,7 +15,7 @@ export default function GameWon(props) {
    // title & body are passed to the modal 
     let title = <>You've Won! <TrophyFill /></>;
 
-    let body = <><img src={Winner} alt="winner" height={"220px"} width={"440px"} />
+    let body = <><img className="game-won" src={Winner} alt="winner"  />
     <br></br>
     <>
     Would you like to play round {gameRound+1}?
@@ -30,7 +30,7 @@ export default function GameWon(props) {
     return (
       <>
       {(gameRound<5)?
-        <div className="game-won">
+        <div>
           <DisplayModalAuto body={body} title={title} show={won} handleClose={toggleWon} />
         </div>
         :null}

@@ -22,15 +22,15 @@ function DisplayModalAuto(props) {
         keyboard={false}
         
       >
-        <Modal.Header closeButton>
+        <Modal.Header /*closeButton*/>
           <Modal.Title >{title}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           {body}
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="primary" onClick={handleClose}>
-            Close
+          <Button variant="warning" onClick={handleClose}>
+            Quit Game
           </Button>
         </Modal.Footer>
       </Modal>

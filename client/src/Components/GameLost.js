@@ -11,10 +11,10 @@ export default function GameLost(props) {
     let setPlaying = props.setPlaying; // passes to ToggleRestart
 
     // body component to pass to modal
-    let body = <><img src={GameOver} alt="lost" width={"440px"} height={"220px"} />
+    let body = <><img id="game-lost" src={GameOver} alt="lost" />
     <br></br>
     {(gameRound===1)?<>
-        You can start a new game? Or Restart this game?
+        Restart this game? Or Quit & start a new game?
     <div onClick={toggleLost}>
     <ToggleRestart setPlaying={setPlaying} setGameOver={setGameOver} /> 
     </div>
@@ -24,7 +24,7 @@ export default function GameLost(props) {
 
     return (
       <>
-        <div className="game-lost">
+        <div>
           <DisplayModalAuto body={body} title={"You've Lost! "} show={lost} handleClose={toggleLost} />
         </div>
       </>

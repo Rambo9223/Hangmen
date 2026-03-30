@@ -11,8 +11,8 @@ export default function EndOfGame(props){
     return(<>
         
     <h4 className="shadow">Congratulations! You've Won the Game!</h4>
-    <div id="game-won" >
-        <img src={Winner} alt="GameWon"/>
+    <div>
+        <img className="game-won" src={Winner} alt="GameWon"/>
     </div>
     <h4 className="shadow">Meet the creator on:</h4>
     <ul className="creator-links">

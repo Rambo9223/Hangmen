@@ -31,7 +31,7 @@ export default function InputForm(props){
                 }
             }}  
                 
-                value={guess}
+                value={String(guess).toLocaleLowerCase()}
                 name="guess"
                 maxLength={guessLength}
                 className="user-guess"
