@@ -1,3 +1,6 @@
+import { XCircleFill,CheckCircleFill } from "react-bootstrap-icons";
+
+
 export default function MapGuesses(props) {
 
      // MapGuesses will take the guess and guess list and map out
@@ -52,10 +55,12 @@ export default function MapGuesses(props) {
           <>
           <div className="guess-container" id="correct">
               <h4 className="shadow">Correct Guesses</h4>
+              <CheckCircleFill  id="CG-Icon"/>
               <ul className="correct-ul">{mapCorrect}</ul>
           </div>
           <div className="guess-container" id="incorrect">
               <h4 className="shadow">Incorrect Guesses</h4>
+              <XCircleFill className="IG-Icon" />
               <ul className="incorrect-ul">{mapIncorrect}</ul>
           </div>
           </>

@@ -12,7 +12,7 @@ function HangmanImage(props) {
   
   return (
     <div className="image-container">
-      <img height={"300px"} width={"241px"} src={imageArray[num]} alt={`hangman ${num}`} />
+      <img id="hangman" src={imageArray[num]} alt={`hangman ${num}`} />
     </div>
   );
 }

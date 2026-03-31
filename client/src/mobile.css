@@ -1,6 +1,10 @@
 @media only screen and (max-width:768px) {
   
 
+  .App-header {
+  min-height: 10vh;
+}
+
     .heading>h1{
         font-size: 120%;
     }
@@ -17,6 +21,15 @@
     font-size: 20px;
   }
 
+  #CG-Icon{
+    fill: rgb(13, 118, 13);
+    margin-left: 15px;
+  }
+
+  .IG-Icon{
+    fill: rgb(184, 6, 6);
+    margin-left: 15px;
+  }
 
   .heading{
   display: flex;
@@ -31,5 +44,74 @@
   display: none;
 }
 
+.guess-container{
+  padding: 0,0;
+  margin: auto;
+}
+
+.guess-container>h4 , #incorrect-words>h4{
+  display: none;
+}
+
+#correct , #incorrect {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2px;
+}
+.correct-ul , .incorrect-ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: left;
+}
+
+.correct-letter:last-child:after , .incorrect-letter:last-child:after{
+  content: ",";
+  margin: auto;
+  }
+
+#correct{
+  border: 2px solid red;
+  height: 180px;
+  width: 150px;
+  position: fixed;
+  bottom: 30%;
+  right:63%;
+  z-index: 0;
+}
+
+
+#incorrect{
+  border: 2px solid red;
+  height: 180px;
+  width: 150px;
+  position: fixed;
+  bottom: 30%;
+  left:61%;
+}
+
+.image-container{
+  text-align: center;
+}
+#hangman{
+  max-width: 60%;
+  height: auto;
+  max-height: 275px;
+}
+
+
 
 }
+
+@media only screen and (min-width:600px) and (max-width:768px){
+  #hangman{
+  max-width: 60%;
+  height: auto;
+  max-height: 300px;
+}
+}
+

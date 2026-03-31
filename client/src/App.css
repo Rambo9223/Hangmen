@@ -37,6 +37,7 @@ position:fixed;
 overflow:clip;
 max-width:inherit;
 max-height:inherit;
+overflow: hidden;
 /*max-height: 700px;*/
 }
 .heading{
@@ -65,12 +66,6 @@ max-height:inherit;
   padding-top: 1%;
 }
 
-@media only screen and (min-width:769px) {
-  .hidden-word{
-    inline-size:auto;
-  }
-}
-
 .hidden-letter{
   /*padding: 20px 20px ;*/
   font-size: 28px;
@@ -93,6 +88,7 @@ max-height:inherit;
   
 }
 
+
 #correct{
   position: inherit;
 
@@ -107,12 +103,13 @@ max-height:inherit;
   display: flex;
   flex-direction:row;
   justify-content: space-evenly;
-  
+  flex-wrap: wrap;
 }
 
 .correct-letter, .incorrect-letter{
   list-style:none;
   background-color: rgba(255, 255, 255, 0.607);
+  color: black;
   border-radius: 15%;
 }
 
@@ -163,12 +160,18 @@ font-size: 170%;
 .error-notification{
   position: inherit;
   text-align: center;
-  /*padding-top: 10%;
-  padding-bottom: 2%;*/
   padding: 2%;
   font-size: larger;
   font-weight: bolder;
   color: rgb(222, 55, 55);
+}
+
+.success-notification{
+  position: relative;
+  text-align: center;
+  color: rgb(189, 222, 55);
+  background-color: rgba(0, 0, 0, 0.493);
+  border-radius: 15px;
 }
 
     .game-won{
@@ -215,6 +218,36 @@ font-size: 170%;
   width: 45px;
   background-color: rgb(236, 232, 255);
   border-radius: 60%;
+}
+
+
+@media only screen and (min-width:769px){
+
+  .hidden-word{
+    inline-size:200px;
+  }
+
+   #CG-Icon ,.IG-Icon{
+    display: none;
+  }
+
+  
+} 
+
+@media only screen and (min-width:769px) and (max-width:1023px){
+  #hangman{
+  max-width: 80%;
+  height: auto;
+  max-height: 300px;
+}
+}
+
+@media only screen and (min-width:1024px) {
+  #hangman{
+  max-width: 100%;
+  height: auto;
+  max-height: 350px;
+}
 }
 
 /*.image-container{

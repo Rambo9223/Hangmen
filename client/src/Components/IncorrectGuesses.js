@@ -1,4 +1,7 @@
 // Display function to show incorrect guesses 
+
+import { XCircleFill } from "react-bootstrap-icons";
+
 export default function IncorrectGuesses(props) {
 
     
@@ -19,8 +22,9 @@ export default function IncorrectGuesses(props) {
      // return the list
      return (
          <>
-         <div className="shadow" id="incorrect-words">
+         <div className="shadow"    id="incorrect-words">
              <h4>Incorrect Guesses</h4>
+             <XCircleFill className="IG-Icon"/>
              <ul className="word-ul">{mapIncorrect}</ul>
          </div>
          </>
