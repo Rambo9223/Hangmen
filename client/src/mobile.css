@@ -75,22 +75,22 @@
   }
 
 #correct{
-  border: 2px solid red;
+  /*border: 2px solid red;*/
   height: 180px;
   width: 150px;
   position: fixed;
-  bottom: 30%;
+  bottom: 50%;
   right:63%;
   z-index: 0;
 }
 
 
 #incorrect{
-  border: 2px solid red;
+  /*border: 2px solid red;*/
   height: 180px;
   width: 150px;
   position: fixed;
-  bottom: 30%;
+  bottom: 50%;
   left:61%;
 }
 
